@@ -1,0 +1,24 @@
+$font-family: Arila, Helvatica, sans-serif;
+$color: teal;
+$primary-color: #0e6cff;
+$secondary-color: #ff7700;
+$bg-color: rgba(90, 79, 220, 0.025);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  background-image: url(https://themesbrand.com/lezir/layout/images/hero-1-bg-img.png);
+  background-size: cover;
+  height: 1000px;
+}
+
+.section {
+  background: $bg-color;
+  height: 700px;
+}
