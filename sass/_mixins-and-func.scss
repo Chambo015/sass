@@ -1,0 +1,14 @@
+@use "sass:color";
+
+@mixin set-bg-color($bg) {
+  background-color: $bg;
+  color: set-text-color($bg);
+}
+
+@function set-text-color($bg) {
+  @if (color.lightness($bg) > 50) {
+    @return rgba(50, 50, 80, 0.8);
+  } @else {
+    @return #efefef;
+  }
+}
