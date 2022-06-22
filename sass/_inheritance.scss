@@ -1,0 +1,22 @@
+%btn {
+  border-radius: 5px;
+  padding: 8px 20px;
+  border: none;
+  box-shadow: 1px 1px 6px grey;
+
+  &:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  @include set-bg-color(lighten($primary-color, 10%));
+  color: white;
+}
+
+.btn-secondary {
+  @extend %btn;
+  @include set-bg-color(darken($secondary-color, 20%));
+}
