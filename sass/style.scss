@@ -18,7 +18,42 @@ body {
   height: 1000px;
 }
 
+.container {
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 .section {
   background: $bg-color;
   height: 700px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      font-size: 15px;
+      padding: 15px;
+    }
+
+    a:hover {
+      color: $secondary-color;
+    }
+  }
 }
